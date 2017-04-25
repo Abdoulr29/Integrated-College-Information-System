@@ -1,0 +1,12 @@
+#loginBox{
+    width:500px;
+    height: 200px;
+    margin-top: 200px;
+    padding-top: 36px;
+    padding-right: 35px;
+    border-radius: 5px;
+    margin-left:400px;
+    background-color: #fff;
+}
+body{background-color: #31708f;
+}

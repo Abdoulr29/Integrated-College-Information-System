@@ -1,0 +1,223 @@
+@font-face {
+    font-family: Gotham-Black;
+    src: url(../fonts/Gotham-Black.eot);
+}
+@font-face {
+    font-family: Gotham-BlackItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-BoldItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/Gotham-Book.woff);
+}
+@font-face {
+    font-family: Gotham-BookItalic;
+    src: url(../font/Gotham-BookItalic.woff);
+}
+@font-face {
+    font-family: Gotham-ExtraLight;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-ExtraLightItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Light;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-LightItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-MediumItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-ThinItalic;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-Ultra;
+    src: url(sansation_light.woff);
+}
+@font-face {
+    font-family: Gotham-UltraItalic;
+    src: url(sansation_light.woff);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+    font-family: 'Gotham';
+    background: -webkit-radial-gradient(#00FFDA,#0092FF); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#00FFDA,#0092FF); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#00FFDA,#0092FF); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#00FFDA,#0092FF);
+    background-size: cover;
+}
+
+#tabs{
+    max-width: 560px;
+    width: 90%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*background: #fff;*/
+    height: 400px;
+}
+#tabs input[type=radio]{
+    display: none;
+}
+#tabs input[type=text]{
+    margin-top: 2%;
+    font-family: 'Gotham-Book';
+    font-weight: 'normal';
+    font-style: 'normal';
+    border: 0px;
+    background: #F1F1F1;
+    padding: 3px 20px;
+    width: 280px;
+    height: 35px;
+    outline: 0px;
+    border-radius: 30px;
+}
+#tabs input[type=password]{
+    margin-top: 2%;
+    border: 0px;
+    background: #F1F1F1;
+    padding: 3px 20px;
+    width: 280px;
+    height: 35px;
+    outline: 0px;
+    font-family: 'Gotham-Book';
+    font-weight: 'normal';
+    font-style: 'normal';
+    font-size: 12px;
+    border-radius: 30px;
+}
+#tabs input[type=password]:focus{
+    background: #fff;
+    border: 0.5px solid #01BED8;
+    
+}
+#tabs input[type=text]:focus{
+    background: #fff;
+    border: 0.5px solid #01BED8;
+    
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CACACA;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #CACACA;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #CACACA;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #CACACA;
+}
+#tabs button{
+    margin-top: 2%;
+    border: 0px;
+    color: #FFF;
+    font-size: 10px;
+    background: #01BED8;
+    padding: 7px;
+    width: 280px;
+    height: 35px;
+    outline: 0px;
+    font-family: 'Gotham';
+    cursor: pointer;
+    border-radius: 20px;
+}
+#tabs button:hover{
+    margin-top: 2%;
+    border: 0px;
+    color: #01BED8;
+    font-size: 10px;
+    background: #fff;
+    padding: 7px;
+    width: 280px;
+    height: 35px;
+    outline: 0px;
+    border: 0.5px solid #01BED8;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.login-form h2{
+    font-family: 'Gotham';
+    font-weight: 300;
+    font-style: normal;
+    color: #494949;
+}
+#rstf{
+    border-top-right-radius: 5px;
+}
+#rstd{
+    border-top-left-radius: 5px;
+}
+span a{
+    text-decoration: none;
+    color: #E2E2E2;
+    font-size: 12px;
+}
+#tabs label{
+    display: block;
+    float: left;
+    width: 40%;
+    color: #FFF;
+    font-size: 15px;
+    padding:2% 5%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    background: #01BED8;
+}
+#tabs .login-form{
+    margin-top: 7%;
+    background: #fff;
+    width: 90%;
+    padding: 5%;
+    display: none;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+#tabs [id^="std"]:checked + label {
+    background: #fff;
+    color: #0092FF;
+}
+#tabs [id^="stf"]:checked + label {
+    background: #fff;
+    color: #0092FF;
+}
+#std:checked ~ #std-login, #stf:checked ~ #stf-login{
+    display:block; 
+}
+.login-form{
+    margin-top: 80px;
+    height: 270px;
+}
