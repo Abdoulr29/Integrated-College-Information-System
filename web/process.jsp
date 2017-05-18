@@ -19,7 +19,7 @@
         <title>Admin</title>
 
         <!-- Bootstrap -->
-          <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="css/bootstrap.min.css" rel="stylesheet"> 
 
 
     </head>
@@ -39,7 +39,11 @@
                     <li><a href="settings.jsp">Settings</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> <% out.print(session.getAttribute("username"));%></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> <% if (session.getAttribute("username") == null || (session.getAttribute("username").equals(""))) {
+                            response.sendRedirect("Admin.jsp");
+                        } else {
+                            out.print(session.getAttribute("username"));
+                        }%></a></li>
                     <li><a href="logout.jsp"><span class="glyphicon glyphicon-off"></span> logout </a></li>
                 </ul>
             </div>

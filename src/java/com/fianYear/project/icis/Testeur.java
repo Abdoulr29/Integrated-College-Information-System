@@ -30,10 +30,12 @@ public class Testeur extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String user = request.getParameter("user");
+        InputStream inputStream = null;
+        byte[] b = null;
+        TestDbFiles files = new TestDbFiles();
         try {
-            String user = request.getParameter("user");
-            InputStream inputStream = null;
-            byte[] b = null;
+
             DiskFileItemFactory factory = new DiskFileItemFactory();
             ServletFileUpload upload = new ServletFileUpload(factory);
             List list = upload.parseRequest(request);
@@ -44,8 +46,8 @@ public class Testeur extends HttpServlet {
                     b = fileItem.get();
                 }
             }
-            TestDbFiles files = new TestDbFiles();
-            files.setUsername(user);
+
+            files.setUsername("abdoul");
             files.setMyImage(b);
             TestDbFiles.createMyTest(files);
 

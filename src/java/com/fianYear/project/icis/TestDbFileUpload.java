@@ -40,7 +40,7 @@ public class TestDbFileUpload extends HttpServlet {
         fileUpload.setUsername(user);
         if(inputStream !=null){
             
-        fileUpload.setMyImage(inputStream.);
+       // fileUpload.setMyImage(inputStream.);
         
         }
         TestDbFiles.createMyTest(fileUpload);

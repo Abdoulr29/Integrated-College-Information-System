@@ -81,7 +81,7 @@
                 
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                      <img src="production/images/img.jpg" alt="">  <%out.print(session.getAttribute("student"));  %>
+                      <img src="Mydwn" alt="">  <%out.print(session.getAttribute("student"));  %>
                     
                     <span class="icon-angle-down"></span>
                   </a>

@@ -17,29 +17,26 @@ import javax.mail.internet.MimeMessage;
  *
  * @author Abdoulr
  */
-public class Tester {
+public class MyJavaMail {
 
     public static void main(String[] args) {
         String to = "abdoulr29@gmail.com";
-        String from = "abdoul.Ruhr@outlook.com";
+        String from = "abdoulr29@gmail.com";
         String host = "localhost";
-        Properties properties = System.getProperties();
-        properties.setProperty("mail.smtp.host", host);
-        properties.put("mail.smtp.port", "25");
-        Session session = Session.getDefaultInstance(properties);
+        Properties prop = System.getProperties();
+        prop.setProperty("mail.smtp.host", host);
+        Session session = Session.getDefaultInstance(prop);
         try {
             MimeMessage message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(from));
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("this is my announcement to all students");
-            message.setText("this is me writting my first java mail class Bitches!!");
+            message.setFrom(new InternetAddress());
+            message.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
+            message.setSubject("this my subject");
+            message.setText("unidentified flying objects");
             Transport.send(message);
-            System.out.println("message sent!!");
-
-        } catch (MessagingException mess) {
-            mess.printStackTrace();
+            System.out.println("message sent successfuly");
+        } catch (MessagingException e) {
+            e.printStackTrace();
         }
-
     }
 
 }
